@@ -2,7 +2,7 @@ import './App.css';
 import WarningSign from './components/WarningSign';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import MyBadge from './components/MyBadge';
-import SingleBook from './components/SingleBook';
+import BookList from './components/BookList';
 
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <WarningSign something="danger"/>
       <MyBadge colour="black" textcontent="Some text, why not?" variant="danger"/>
-      <SingleBook/>
+      <BookList/>
     </div>
   );
 }
