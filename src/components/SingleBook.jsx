@@ -13,7 +13,7 @@ class SingleBook extends Component {
       <Container>
         <Row className="justify-content-center mt-3 mb-4">
           <Col xs={4} md={4} className="text-center">
-            {horror.map((thehorror) => (
+            {horror.slice(0, 20).map((thehorror) => (
               <Card style={{ width: "18rem" }} key={thehorror.asin}>
                 <img
                   className="d-block w-100 ratio"
