@@ -1,5 +1,6 @@
 import { Component } from "react";
 import { Card } from "react-bootstrap";
+import CommentArea from "./CommentArea";
 
 class SingleBook extends Component {
 
@@ -14,7 +15,7 @@ class SingleBook extends Component {
           className="w-100"
           src={this.props.book.img}
           alt={this.props.book.title}
-          onClick={(event) => {
+          onClick={() => {
             this.setState({
               selectedHorror: !this.state.selectedHorror,
             });
@@ -28,6 +29,10 @@ class SingleBook extends Component {
             </div>
           </div>
         </Card.Body>
+        {
+            this.state.selectedHorror?<CommentArea/>:""
+
+}
       </Card>
     )
     }
