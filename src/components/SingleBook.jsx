@@ -30,7 +30,7 @@ class SingleBook extends Component {
           </div>
         </Card.Body>
         {
-            this.state.selectedHorror?<CommentArea/>:""
+            this.state.selectedHorror?<CommentArea book={this.props.book.asin}/>:""
 
 }
       </Card>
