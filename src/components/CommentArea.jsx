@@ -56,3 +56,11 @@ render() {
 
 export default CommentArea;
 
+// componentDidUpdate = (prevProps, prevState) => {
+//   console.log("Accessed the componentDidUpdate!")
+//   console.log(prevProps, prevProps.commentsToDisplay, this.props.commentsToDisplay)
+//   if (prevProps.commentsToDisplay !== this.props.commentsToDisplay) {
+//     console.log("Accessed the conditional!")
+//     this.fetchTheThing();
+//   }
+// }
